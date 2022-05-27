@@ -2,3 +2,6 @@
   font-family: myFont;
   src: url(ModernSans-Light.otf);
 }
+p.nav {
+  align-items: center;
+}
