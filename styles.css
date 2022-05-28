@@ -38,3 +38,25 @@ html {
   text-decoration: none;
   color: black;
 }
+.container {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  background-color: aqua;
+}
+.infodel1 {
+  float: left;
+  width: 100px;
+  background-color: aqua;
+}
+.infodel2 {
+  float: right;
+  width: 100px;
+  background-color: brown;
+}
+
+.infodel3 {
+  margin: 0 auto;
+  width: 100px;
+  background-color: black;
+}
