@@ -49,6 +49,16 @@ html {
   flex-direction: row;
   display: flex;
 }
+.container h4 {
+  margin: 15px;
+  text-align: center;
+  color: #fbfbff;
+}
+.container p {
+  text-align: center;
+  color: #fbfbff;
+  margin: 15px;
+}
 .info1 {
   float: left;
   width: 33%;
@@ -76,12 +86,24 @@ html {
   background-color: #fbfbff;
   position: relative;
   align-items: center;
+  flex-direction: row;
 }
 h4 {
   margin-bottom: 20px;
 }
 .footer li {
   list-style: none;
+}
+.socialmedia {
+  float: right;
+  margin: 20px;
+}
+.location {
+  margin: 10 auto;
+}
+.contact-info {
+  float: left;
+  margin: 10px;
 }
 .socialmedia li :hover {
   transform: scale(1.2);
