@@ -38,6 +38,10 @@ html {
 .meny li a {
   text-decoration: none;
   color: black;
+  transition: all 0.3s ease;
+}
+.meny li a :hover {
+  transform: scale(1.1);
 }
 .container {
   width: 100%;
@@ -48,19 +52,20 @@ html {
 .info1 {
   float: left;
   width: 33%;
-  background-color: #20bf55;
+  background: linear-gradient(to bottom, #20bf55, #095256);
 }
 .info2 {
   float: right;
   width: 33%;
-  background-color: #0b4f6c;
+  background: linear-gradient(to bottom, #0b4f6c, #095256);
 }
 
 .info3 {
   margin: 0 auto;
   width: 34%;
-  background-color: #01baef;
+  background: linear-gradient(to bottom, #01baef, #095256);
 }
+
 .shop {
   height: 750px;
   background-color: #095256;
@@ -69,4 +74,19 @@ html {
 .footer {
   height: 150px;
   background-color: #fbfbff;
+  position: relative;
+  align-items: center;
+}
+h4 {
+  margin-bottom: 20px;
+}
+.footer li {
+  list-style: none;
+}
+.socialmedia li :hover {
+  transform: scale(1.2);
+}
+
+.socialmedia li {
+  transition: all 0.3s ease;
 }
