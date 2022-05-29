@@ -80,6 +80,9 @@ html {
   height: 750px;
   background-color: #095256;
 }
+.shop input {
+  align-items: right;
+}
 
 .footer {
   height: 150px;
