@@ -7,9 +7,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="nav">
+    <nav class="nav">
       <ul class="meny">
         <li>
           <a type="button" href="#what-we-do" class="button">What we do</a>
@@ -23,44 +30,158 @@
           >
         </li>
       </ul>
-    </div>
+    </nav>
     <div class="container">
       <div id="info1" class="info1">
         <h4>The problem</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia maiores eos eligendi soluta pariatur, non officia recusandae iure eveniet incidunt dolore doloremque deleniti quae porro cumque voluptatem, a perferendis. Veritatis voluptatem sit fugiat unde distinctio officia nostrum id a, qui accusamus, reiciendis doloremque praesentium.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia
+          maiores eos eligendi soluta pariatur, non officia recusandae iure
+          eveniet incidunt dolore doloremque deleniti quae porro cumque
+          voluptatem, a perferendis. Veritatis voluptatem sit fugiat unde
+          distinctio officia nostrum id a, qui accusamus, reiciendis doloremque
+          praesentium.
+        </p>
       </div>
-      <div id="info2" class="info2"><h4>How can you help</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum architecto dolor qui velit culpa sed incidunt dicta illum excepturi quae voluptatem, officia id? Aliquid accusamus amet molestias obcaecati praesentium dolor architecto, temporibus odio possimus perspiciatis aut recusandae vero doloremque in. Incidunt aperiam excepturi rem iste cupiditate tempora, sapiente possimus sint maiores similique esse, nam nisi vero. Tempore, quibusdam molestias!</p></div>
-      
+      <div id="info2" class="info2">
+        <h4>How can you help</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum
+          architecto dolor qui velit culpa sed incidunt dicta illum excepturi
+          quae voluptatem, officia id? Aliquid accusamus amet molestias
+          obcaecati praesentium dolor architecto, temporibus odio possimus
+          perspiciatis aut recusandae vero doloremque in. Incidunt aperiam
+          excepturi rem iste cupiditate tempora, sapiente possimus sint maiores
+          similique esse, nam nisi vero. Tempore, quibusdam molestias!
+        </p>
+      </div>
+
       <div id="info3" class="info3">
         <h4>Thank you!</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni saepe eaque, quasi obcaecati harum repudiandae porro voluptas consectetur maxime quidem quam voluptatibus inventore officiis vero, veritatis dolor molestiae. Itaque odit magni eligendi error laboriosam temporibus distinctio sit iste ipsam nobis id ratione ipsa inventore facilis, nulla repudiandae sequi pariatur.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni
+          saepe eaque, quasi obcaecati harum repudiandae porro voluptas
+          consectetur maxime quidem quam voluptatibus inventore officiis vero,
+          veritatis dolor molestiae. Itaque odit magni eligendi error laboriosam
+          temporibus distinctio sit iste ipsam nobis id ratione ipsa inventore
+          facilis, nulla repudiandae sequi pariatur.
+        </p>
       </div>
     </div>
     <div id="shop" class="shop">
-      <div id="knapper" class="knapper">
-        <div class="top-row">
-          <ul class="top">
-            <input type="radio">1</input>
-            <input type="radio">2</input>
-            <input type="radio">3</input>
-          </ul>
+      <h2
+        style="
+          color: white;
+          text-align: center;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        "
+      >
+        Her kan du velge din donasjon for å hjelpe miljøet.
+      </h2>
+
+      <div class="success">
+        <div>
+          <i class="fa-solid fa-cart-circle-check"></i>
         </div>
-        <div class="bottom-row">
-          <ul class="bottom">
-            <input type="radio">4</input>
-            <input type="radio">5</input>
-            <input type="radio">6</input>
-          </ul>
+        <div>Takk for din donasjon!</div>
+        <div id="donate-again" class="submit-btn">
+          <button>Doner på nytt?</button>
         </div>
       </div>
-      <div class="betal">
-        <a type="button">BETAL</a>
-      </div>
+      <form id="shop-form">
+        <div class="item-grid">
+          <label for="donate-tree">
+            <span class="info">Doner et tre</span>
+            <input id="donate-tree" type="checkbox"
+          /></label>
+          <label for="buy">
+            <span class="info"
+              >Kjøp handlenett <br />
+              <small>kr 20.00</small>
+            </span>
+            <input id="buy" type="checkbox"
+          /></label>
+          <label for="fisher">
+            <span class="info">Hjelp en fisker</span>
+            <input id="fisher" type="checkbox"
+          /></label>
+          <label for="news">
+            <span class="info">Abonner på nyhetsbrev</span>
+            <input id="news" type="checkbox"
+          /></label>
+          <label for="donate">
+            <span class="info">Doner penger<br /><small>kr 200.00</small></span>
+            <input id="donate" type="checkbox"
+          /></label>
+          <label for="book">
+            <span class="info"
+              >kjøp boken vår <br /><small> kr 399.00 </small></span
+            >
+            <input id="book" type="checkbox"
+          /></label>
+        </div>
+
+        <div id="credit-card-form">
+          <input
+            class="input"
+            placeholder="Kort nummer"
+            type="text"
+            name="cardNumber"
+            required
+          />
+          <input
+            class="input"
+            placeholder="MM"
+            type="number"
+            name="expiryMonth"
+            maxlength="2"
+            minlength="2"
+            required
+          />
+          <input
+            class="input"
+            placeholder="YY"
+            type="number"
+            name="expiryYear"
+            maxlength="2"
+            minlength="2"
+            required
+          />
+          <input
+            class="input"
+            type="text"
+            maxlength="3"
+            minlength="3"
+            placeholder="CVC"
+            name="cvc"
+            required
+          />
+        </div>
+        <div id="address-form">
+          <input
+            class="input"
+            type="text"
+            name="address"
+            placeholder="Din adresse"
+            required
+          />
+          <input
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Epost adresse"
+            required
+          />
+          <div class="submit-btn">
+            <button>Send Inn</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <div id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="contact-info">
-        <h4>Contact Information</h4>
+        <h5>Contact Information</h5>
         <ul>
           <li>
             E-mail:
@@ -73,26 +194,33 @@
         </ul>
       </div>
       <div class="location">
-        <h4>Location</h4>
+        <h5>Location</h5>
         <ul>
           <li>Address:</li>
           <li><a>Pilestredet 35, Oslo</a></li>
         </ul>
       </div>
       <div class="socialmedia">
-        <h4>Social Media</h4>
-        <ul>
+        <h5>Social Media</h5>
+        <ul class="icons">
           <li>
-            <a title="Facebook" href="https://www.facebook.com" class="icon"><i class="facebook"></a>
-
+            <a title="Facebook" href="https://www.facebook.com" class="icon"
+              ><i class="fa-brands fa-facebook-square"></i
+            ></a>
           </li>
           <li>
-            <a title="Instagram" href="https://www.instagram.com" class="icon"><i class="instagram"></i>
+            <a title="Instagram" href="https://www.instagram.com" class="icon"
+              ><i class="fa-brands fa-instagram-square"></i>
             </a>
           </li>
-          <li> <a title="Twitter" href="https://www.twitter.com" class="icon"> <i class="twitter"></i></a></li>
+          <li>
+            <a title="Twitter" href="https://www.twitter.com" class="icon">
+              <i class="fa-brands fa-twitter-square"></i
+            ></a>
+          </li>
         </ul>
       </div>
-    </div>
+    </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
